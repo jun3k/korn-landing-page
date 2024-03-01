@@ -1,0 +1,123 @@
+:root{
+    --white: #f8f9fa;
+    --opaque-white: #e9ecef;
+    --whity-gray: #dee2e6;
+    --light-gray: #adb5bd;
+    --gray: #6c757d;
+    --heavy-gray: #343a40;
+    --black: #212529;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+}
+
+.header{
+    background-image: url(/img/korn-members.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header__container{
+    width: 100%;
+    height: 100px;
+    padding: 1.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.header__logo{
+    width: 500px;
+    height: 300px;
+    margin: 80px auto 0;
+}
+
+.header__logo img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.header__navbar ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.header__navbar li{
+    position: relative;
+}
+
+.header__navbar a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: var(--white);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.header__navbar a{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header__navbar a:hover:after{
+    width: 100%;
+    left: 0;
+}
+
+.about{
+    height: 500px;
+    background-color: var(--heavy-gray);
+    display: flex;
+    align-items: center;
+}
+
+.about__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.about__video{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.about__texts{
+    font-family: "CouturierPoster", Sans-serif;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.about__title{
+    font-size: 32px;
+    color: var(--whity-gray)
+}
+
+.about__paragraph{
+    text-transform: none;
+    font-weight: 500;
+}
+
+
+
