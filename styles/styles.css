@@ -20,6 +20,7 @@ body{
     font: bold 14px/1.4 'Open Sans', arial, sans-serif;
 }
 
+/* HEADER */
 .header{
     background-image: url(/img/korn-members.jpg);
     background-size: cover;
@@ -48,6 +49,7 @@ body{
     display: block;
 }
 
+/* HEADER NAVBAR */
 .header__navbar ul{
     list-style-type: none;
     display: flex;
@@ -83,9 +85,10 @@ body{
     left: 0;
 }
 
+/* FIRST SECTION */
 .about{
     height: 500px;
-    background-color: var(--heavy-gray);
+    background-color: var(--black);
     display: flex;
     align-items: center;
 }
@@ -98,8 +101,8 @@ body{
 }
 
 .about__video{
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     object-fit: cover;
 }
 
@@ -110,14 +113,94 @@ body{
 }
 
 .about__title{
-    font-size: 32px;
-    color: var(--whity-gray)
+    font-size: 2.25rem;
+    font-weight: bolder;
+    color: var(--whity-gray);
 }
 
 .about__paragraph{
     text-transform: none;
     font-weight: 500;
+    color: var(--opaque-white);
+    margin: 2.4rem 0;
 }
 
+.about__cta__container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: .2s ease-in;
+    width: 50%;
+    cursor: pointer;
+}
 
+.about__cta__container:hover{
+    color: var(--black);
+    padding: 8px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: #1ed760;
+    transition: .4s ease-in-out;
+    width: 42%;
+}
 
+.about__cta{
+    color: var(--white);
+}
+
+.about__cta__container a:hover{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.about__cta__container img{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+/* SECOND SECTION */
+.members{
+    background-image: url("https://kornofficial.com/wp-content/uploads/2023/04/Korn-siteupdate.00_00_01_07.Still001.jpg");
+    padding: 50px 0;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.members__title{
+    font-size: 42px;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+.members__container{
+    display: flex;
+    height: 530px;
+}
+
+.members__container img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.members__container img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+}
+
+/* THIRD SECTION */
+
+.discography{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
